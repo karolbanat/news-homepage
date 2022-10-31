@@ -2,21 +2,22 @@
 @use '../abstracts/mixins';
 
 :root {
-	// colors
+	/* colors */
 	@each $color, $shades in variables.$colors {
 		@each $shade, $value in $shades {
 			--clr-#{$color}-#{$shade}: #{$value};
 		}
 	}
 
-	// font families
+	/* font families */
+	--ff-primary: 'Inter', sans-serif;
 
-	// font wieghts
+	/* font weights */
 	@each $font-weight, $value in variables.$font-weights {
 		--fw-#{$font-weight}: #{$value};
 	}
 
-	// font sizes
+	/* font sizes */
 	@each $screen, $sizes in variables.$font-sizes {
 		@if $screen == small {
 			@each $size, $value in $sizes {
@@ -31,15 +32,19 @@
 		}
 	}
 
-	// border radius
-	@each $radius, $value in variables.$border-radius {
-		--borr-#{$radius}: #{$value};
-	}
+	/* gaps */
+	--nav-list-gap: 2.4rem;
+	--intro-gap: 6.4rem;
+	--intro-content-gap: 2.4rem;
+	--featured-article-gap: 1.6rem;
+	--popular-gap: 3.2rem;
+	--popular-article-gap: 2.4rem;
 
-	// spacings
-	@each $unit, $sizes in variables.$spacings {
-		@each $size, $value in $sizes {
-			--spacing-#{$unit}-#{$size}: #{$value};
-		}
+	@include mixins.mq(medium) {
+		--nav-list-gap: 4rem;
+		--intro-gap: 3rem;
+		--intro-content-gap: 2.8rem;
+		--featured-article-gap: 3rem;
+		--popular-gap: 3rem;
 	}
 }

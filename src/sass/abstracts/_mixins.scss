@@ -7,3 +7,11 @@
 		@content;
 	}
 }
+
+@mixin max-mq($key) {
+	$size: map-get(variables.$breakpoints, $key);
+
+	@media only screen and (max-width: calc(#{$size} - 1px)) {
+		@content;
+	}
+}
