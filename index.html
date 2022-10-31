@@ -18,42 +18,111 @@
 
 <body>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+  <header>
+    <div class="container">
+      <nav class="primary-navigation">
+        <div class="flex-space-between">
+          <a aria-label="Home page" href="#"><img src="./dist/assets/images/logo.svg" alt=""></a>
+          <button aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu" class="toggle-button">
+            <img src="./dist/assets/images/icon-menu.svg" alt="" class="toggle-button__icon-open">
+            <img src="./dist/assets/images/icon-menu-close.svg" alt="" class="toggle-button__icon-close">
+          </button>
 
-  The Bright Future of Web 3.0?
+          <div id="primary-nav" class="primary-navigation__nav">
+            <ul class="primary-navigation__nav-list">
+              <li><a href="#" class="link primary-navigation__link">Home</a></li>
+              <li><a href="#" class="link primary-navigation__link">New</a></li>
+              <li><a href="#" class="link primary-navigation__link">Popular</a></li>
+              <li><a href="#" class="link primary-navigation__link">Trending</a></li>
+              <li><a href="#" class="link primary-navigation__link">Categories</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the
-  people.
-  But is it really fulfilling its promise?
+  <main>
+    <h1 class="visually-hidden">The only tech news website you will need.</h1>
+    <div class="container">
+      <section aria-labelledby="featured-heading">
+        <div class="even-columns">
+          <div class="even-columns__col even-columns__col--span-2">
+            <!-- Featured article start -->
+            <div class="grid">
+              <div class="image-container">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="./dist/assets/images/image-web-3-desktop.jpg">
+                  <img src="./dist/assets/images/image-web-3-mobile.jpg" alt="">
+                </picture>
+              </div>
+              <article class="article article--featured">
+                <h2 id="featured-heading" class="article__heading">The Bright Future of Web 3.0?</h2>
+                <div class="flex-vertical-space-between">
+                  <p>We dive into the next evolution of the web that claims to put the power of the platforms back into
+                    the hands of the people. But is it really fulfilling its promise?</p>
+                  <a aria-describedby="featured-heading" href="#" class="button button--accent">Read more</a>
+                </div>
+              </article>
+            </div>
+            <!-- Featured article end -->
+          </div>
+          <aside class="new-articles">
+            <h2 class="new-articles__heading">New</h2>
+            <ul class="new-articles__list">
+              <li>
+                <article class="article article--new">
+                  <h3 class="article__heading"><a href="#" class="link">Hydrogen VS Electric Cars</a></h3>
+                  <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                </article>
+              </li>
+              <li>
+                <article class="article article--new">
+                  <h3 class="article__heading"><a href="#" class="link">The Downsides of AI Artistry</a></h3>
+                  <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                </article>
+              </li>
+              <li>
+                <article class="article article--new">
+                  <h3 class="article__heading"><a href="#" class="link">Is VC Funding Drying Up?</a></h3>
+                  <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                </article>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </div>
 
-  Read more
-
-  New
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
+    <div class="container">
+      <section>
+        <h2 class="visually-hidden">Popular articles</h2>
+        <ul class="even-columns">
+          <li class="flex">
+            <img src="./dist/assets/images/image-retro-pcs.jpg" alt="Retro PC, cassettes, joystick, keyboard.">
+            <article class="article article--popular">
+              <h3 class="article__heading"><a href="#" class="link">Reviving Retro PCs</a></h3>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </article>
+          </li>
+          <li class="flex">
+            <img src="./dist/assets/images/image-top-laptops.jpg" alt="Black laptop keyboard with red letters.">
+            <article class="article article--popular">
+              <h3 class="article__heading"><a href="#" class="link">Top 10 Laptops of 2022</a></h3>
+              <p>Our best picks for various needs and budgets.</p>
+            </article>
+          </li>
+          <li class="flex">
+            <img src="./dist/assets/images/image-gaming-growth.jpg" alt="Hand and white pad tossed up.">
+            <article class="article article--popular">
+              <h3 class="article__heading"><a href="#" class="link">The Growth of Gaming</a></h3>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
 
 </body>
 
