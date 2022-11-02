@@ -11,4 +11,11 @@
 			--clr-link: var(--clr-primary-700);
 		}
 	}
+
+	&--secondary {
+		&:hover,
+		&:focus {
+			--clr-link: var(--clr-primary-400);
+		}
+	}
 }

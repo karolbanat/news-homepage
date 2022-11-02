@@ -1,0 +1,38 @@
+@use '../abstracts/mixins' as mxn;
+
+.new-articles {
+	padding-block: 2.4rem;
+	padding-inline: 2rem;
+	background-color: var(--clr-neutral-700);
+	color: var(--clr-neutral-300);
+	@include mxn.mq(medium) {
+		padding-block: 3.2rem;
+		padding-inline: 2.4rem;
+	}
+
+	&__heading {
+		margin-block-end: 3.4rem;
+		font-size: var(--fz-750);
+		font-weight: var(--fw-700);
+		line-height: 1;
+		color: var(--clr-primary-400);
+	}
+
+	&__list {
+		& > li {
+			padding-block: 3rem;
+
+			&:first-child {
+				padding-block-start: 0;
+			}
+
+			&:not(:first-child) {
+				border-block-start: 1px solid var(--clr-neutral-400);
+			}
+
+			&:last-child {
+				padding-block-end: 0;
+			}
+		}
+	}
+}
