@@ -46,9 +46,9 @@
 
   <main>
     <div class="container">
-      <section aria-labelledby="featured-heading" class="intro-spacer">
-        <div class="even-columns" style="--even-columns-spacer: var(--intro-gap)">
-          <div class="even-columns__col even-columns__col--span-2-lg">
+      <div class="even-columns intro-spacer" style="--even-columns-spacer: var(--intro-gap)">
+        <div class="even-columns__col even-columns__col--span-2-lg">
+          <section aria-labelledby="featured-heading">
             <!-- Featured article start -->
             <div class="grid" style="--grid-spacer: var(--intro-content-gap)">
               <div class="image-container">
@@ -60,7 +60,7 @@
               <article class="article article--featured | even-columns"
                        style="--even-columns-spacer: var(--featured-article-gap)">
                 <h2 id="featured-heading" class="article__heading">The Bright Future of Web 3.0?</h2>
-                <div class="flex-vertical-space-between">
+                <div class="flex-vertical-space-between" style="--flex-vertical-spacer: var(--featured-body-gap)">
                   <p>We dive into the next evolution of the web that claims to put the power of the platforms back into
                     the hands of the people. But is it really fulfilling its promise?</p>
                   <a aria-describedby="featured-heading" href="#" class="button button--primary">Read more</a>
@@ -68,35 +68,35 @@
               </article>
             </div>
             <!-- Featured article end -->
-          </div>
-          <aside class="new-articles">
-            <h2 class="new-articles__heading">New</h2>
-            <ul class="new-articles__list">
-              <li>
-                <article class="article article--new">
-                  <h3 class="article__heading"><a href="#" class="link link--secondary">Hydrogen VS Electric Cars</a>
-                  </h3>
-                  <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-                </article>
-              </li>
-              <li>
-                <article class="article article--new">
-                  <h3 class="article__heading"><a href="#" class="link link--secondary">The Downsides of AI Artistry</a>
-                  </h3>
-                  <p>What are the possible adverse effects of on-demand AI image generation?</p>
-                </article>
-              </li>
-              <li>
-                <article class="article article--new">
-                  <h3 class="article__heading"><a href="#" class="link link--secondary">Is VC Funding Drying Up?</a>
-                  </h3>
-                  <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-                </article>
-              </li>
-            </ul>
-          </aside>
+          </section>
         </div>
-      </section>
+        <aside class="new-articles">
+          <h2 class="new-articles__heading">New</h2>
+          <ul class="new-articles__list">
+            <li>
+              <article class="article article--new">
+                <h3 class="article__heading"><a href="#" class="link link--secondary">Hydrogen VS Electric Cars</a>
+                </h3>
+                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+              </article>
+            </li>
+            <li>
+              <article class="article article--new">
+                <h3 class="article__heading"><a href="#" class="link link--secondary">The Downsides of AI Artistry</a>
+                </h3>
+                <p>What are the possible adverse effects of on-demand AI image generation?</p>
+              </article>
+            </li>
+            <li>
+              <article class="article article--new">
+                <h3 class="article__heading"><a href="#" class="link link--secondary">Is VC Funding Drying Up?</a>
+                </h3>
+                <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+              </article>
+            </li>
+          </ul>
+        </aside>
+      </div>
     </div>
 
     <div class="container">

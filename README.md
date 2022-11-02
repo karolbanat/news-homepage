@@ -4,8 +4,8 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution Page](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages Site](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/news-homepage-X-k76ravp2)
+- Live Site URL: [GitHub Pages Site](https://karolbanat.github.io/news-homepage/)
 
 ## Author
 

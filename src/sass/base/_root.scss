@@ -37,6 +37,7 @@
 	--intro-gap: 6.4rem;
 	--intro-content-gap: 2.4rem;
 	--featured-article-gap: 1.6rem;
+	--featured-body-gap: 2.4rem;
 	--popular-gap: 3.2rem;
 
 	@include mixins.mq(small) {
@@ -46,6 +47,7 @@
 	@include mixins.mq(medium) {
 		--nav-list-gap: 4rem;
 		--intro-content-gap: 2.8rem;
+		--featured-body-gap: 3rem;
 		--popular-gap: 3rem;
 	}
 	@include mixins.mq(large) {

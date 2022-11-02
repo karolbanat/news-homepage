@@ -14,5 +14,5 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
-	gap: 2.4rem;
+	gap: var(--flex-vertical-spacer, 1em);
 }
