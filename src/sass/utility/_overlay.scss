@@ -1,0 +1,14 @@
+@use '../abstracts/mixins' as mxn;
+
+.shadow-overlay {
+	@include mxn.max-mq(medium) {
+		position: absolute;
+
+		&::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background-color: var(--clr-neutral-750);
+		}
+	}
+}

@@ -19,22 +19,24 @@
 <body>
 
   <header>
+    <h1 class="visually-hidden">The only tech news website you will need.</h1>
     <div class="container">
       <nav class="primary-navigation">
         <div class="flex-space-between">
           <a aria-label="Home page" href="#"><img src="./dist/assets/images/logo.svg" alt=""></a>
-          <button aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu" class="toggle-button">
+          <button aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu"
+                  class="toggle-button primary-navigation__toggle-button">
             <img src="./dist/assets/images/icon-menu.svg" alt="" class="toggle-button__icon-open">
             <img src="./dist/assets/images/icon-menu-close.svg" alt="" class="toggle-button__icon-close">
           </button>
 
           <div id="primary-nav" class="primary-navigation__nav">
             <ul class="primary-navigation__nav-list">
-              <li><a href="#" class="link primary-navigation__link">Home</a></li>
-              <li><a href="#" class="link primary-navigation__link">New</a></li>
-              <li><a href="#" class="link primary-navigation__link">Popular</a></li>
-              <li><a href="#" class="link primary-navigation__link">Trending</a></li>
-              <li><a href="#" class="link primary-navigation__link">Categories</a></li>
+              <li><a href="#" class="link link--primary primary-navigation__nav-link">Home</a></li>
+              <li><a href="#" class="link link--primary primary-navigation__nav-link">New</a></li>
+              <li><a href="#" class="link link--primary primary-navigation__nav-link">Popular</a></li>
+              <li><a href="#" class="link link--primary primary-navigation__nav-link">Trending</a></li>
+              <li><a href="#" class="link link--primary primary-navigation__nav-link">Categories</a></li>
             </ul>
           </div>
         </div>
@@ -43,7 +45,6 @@
   </header>
 
   <main>
-    <h1 class="visually-hidden">The only tech news website you will need.</h1>
     <div class="container">
       <section aria-labelledby="featured-heading">
         <div class="even-columns">
@@ -124,6 +125,7 @@
     </div>
   </main>
 
+  <script src="./dist/js/main.min.js" defer></script>
 </body>
 
 </html>

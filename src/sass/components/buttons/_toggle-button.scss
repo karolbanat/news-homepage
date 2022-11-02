@@ -1,0 +1,18 @@
+.toggle-button {
+	display: inline-block;
+	border: none;
+	background: none;
+	cursor: pointer;
+
+	&__icon-close {
+		display: none;
+	}
+
+	&[aria-expanded='true'] &__icon-close {
+		display: block;
+	}
+
+	&[aria-expanded='true'] &__icon-open {
+		display: none;
+	}
+}
