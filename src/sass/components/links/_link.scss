@@ -4,6 +4,49 @@
 	color: var(--clr-link, inherit);
 	cursor: pointer;
 	transition: color 0.4s ease;
+	position: relative;
+
+	/* undelines on hover/focus */
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: -0.2em;
+		width: 50%;
+		height: 2px;
+		background-color: currentColor;
+		scale: 0 1;
+		transition: scale 0.4s ease;
+	}
+
+	/* left line */
+	&::before {
+		left: 0;
+		/* when hover/focus is out, then scale to left */
+		transform-origin: left;
+	}
+
+	/* right line */
+	&::after {
+		right: 0;
+		/* when hover/focus is out, then scale to right */
+		transform-origin: right;
+	}
+
+	&:is(:hover, :focus) {
+		&::before,
+		&::after {
+			scale: 1;
+		}
+		/* on hover/focus left line scales from right */
+		&::before {
+			transform-origin: right;
+		}
+		/* on hover/focus right line scales from left */
+		&::after {
+			transform-origin: left;
+		}
+	}
 
 	&--primary {
 		&:hover,
