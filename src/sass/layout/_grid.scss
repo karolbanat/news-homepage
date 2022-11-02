@@ -1,0 +1,21 @@
+@use '../abstracts/mixins' as mxn;
+
+.grid {
+	display: grid;
+	gap: var(--grid-spacer, 1em);
+	height: 100%;
+}
+
+.even-columns {
+	display: grid;
+	gap: var(--even-columns-spacer, 1em);
+	grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+
+	&__col {
+		&--span-2-lg {
+			@include mxn.mq(large) {
+				grid-column: span 2;
+			}
+		}
+	}
+}

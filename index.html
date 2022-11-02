@@ -46,18 +46,19 @@
 
   <main>
     <div class="container">
-      <section aria-labelledby="featured-heading">
-        <div class="even-columns">
-          <div class="even-columns__col even-columns__col--span-2">
+      <section aria-labelledby="featured-heading" class="intro-spacer">
+        <div class="even-columns" style="--even-columns-spacer: var(--intro-gap)">
+          <div class="even-columns__col even-columns__col--span-2-lg">
             <!-- Featured article start -->
-            <div class="grid">
+            <div class="grid" style="--grid-spacer: var(--intro-content-gap)">
               <div class="image-container">
                 <picture>
                   <source media="(min-width: 800px)" srcset="./dist/assets/images/image-web-3-desktop.jpg">
                   <img src="./dist/assets/images/image-web-3-mobile.jpg" alt="">
                 </picture>
               </div>
-              <article class="article article--featured">
+              <article class="article article--featured | even-columns"
+                       style="--even-columns-spacer: var(--featured-article-gap)">
                 <h2 id="featured-heading" class="article__heading">The Bright Future of Web 3.0?</h2>
                 <div class="flex-vertical-space-between">
                   <p>We dive into the next evolution of the web that claims to put the power of the platforms back into
@@ -101,23 +102,29 @@
     <div class="container">
       <section>
         <h2 class="visually-hidden">Popular articles</h2>
-        <ul class="even-columns">
+        <ul class="even-columns" style="--even-columns-spacer: var(--popular-gap)">
           <li class="flex">
-            <img src="./dist/assets/images/image-retro-pcs.jpg" alt="Retro PC, cassettes, joystick, keyboard.">
+            <div class="image-container image-container--small">
+              <img src="./dist/assets/images/image-retro-pcs.jpg" alt="Retro PC, cassettes, joystick, keyboard.">
+            </div>
             <article class="article article--popular">
               <h3 class="article__heading"><a href="#" class="link link--primary">Reviving Retro PCs</a></h3>
               <p>What happens when old PCs are given modern upgrades?</p>
             </article>
           </li>
           <li class="flex">
-            <img src="./dist/assets/images/image-top-laptops.jpg" alt="Black laptop keyboard with red letters.">
+            <div class="image-container image-container--small">
+              <img src="./dist/assets/images/image-top-laptops.jpg" alt="Black laptop keyboard with red letters.">
+            </div>
             <article class="article article--popular">
               <h3 class="article__heading"><a href="#" class="link link--primary">Top 10 Laptops of 2022</a></h3>
               <p>Our best picks for various needs and budgets.</p>
             </article>
           </li>
           <li class="flex">
-            <img src="./dist/assets/images/image-gaming-growth.jpg" alt="Hand and white pad tossed up.">
+            <div class="image-container image-container--small">
+              <img src="./dist/assets/images/image-gaming-growth.jpg" alt="Hand and white pad tossed up.">
+            </div>
             <article class="article article--popular">
               <h3 class="article__heading"><a href="#" class="link link--primary">The Growth of Gaming</a></h3>
               <p>How the pandemic has sparked fresh opportunities.</p>

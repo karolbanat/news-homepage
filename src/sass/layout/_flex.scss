@@ -1,5 +1,18 @@
+.flex {
+	display: flex;
+	gap: var(--flex-spacer, 2.4rem);
+}
+
 .flex-space-between {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.flex-vertical-space-between {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 2.4rem;
 }

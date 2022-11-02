@@ -38,13 +38,17 @@
 	--intro-content-gap: 2.4rem;
 	--featured-article-gap: 1.6rem;
 	--popular-gap: 3.2rem;
-	--popular-article-gap: 2.4rem;
+
+	@include mixins.mq(small) {
+		--intro-gap: 3rem;
+	}
 
 	@include mixins.mq(medium) {
 		--nav-list-gap: 4rem;
-		--intro-gap: 3rem;
 		--intro-content-gap: 2.8rem;
-		--featured-article-gap: 3rem;
 		--popular-gap: 3rem;
+	}
+	@include mixins.mq(large) {
+		--featured-article-gap: 3rem;
 	}
 }
