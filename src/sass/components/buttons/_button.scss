@@ -1,0 +1,47 @@
+.button {
+	position: relative;
+	isolation: isolate;
+	display: inline-block;
+	/* sizing */
+	padding-block: 0.85em;
+	padding-inline: 2.3em;
+	/* typography */
+	font-size: var(--fz-300);
+	font-weight: var(--fw-700);
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	color: var(--text-button);
+	/* appearance */
+	background-color: var(--bg-button);
+	cursor: pointer;
+	overflow: hidden;
+
+	/* for hover/focus effect, scaling background */
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: 50%;
+		left: 40%;
+		translate: -50% -50%;
+		scale: 0;
+		width: 150%;
+		aspect-ratio: 1;
+		border-radius: 50%;
+		background-color: var(--bg-button-hover, currentColor);
+		transition: scale 0.6s ease;
+	}
+
+	&:is(:hover, :focus) {
+		&::before {
+			scale: 1;
+		}
+	}
+
+	&--primary {
+		--text-button: var(--clr-neutral-200);
+		--bg-button: var(--clr-primary-700);
+		--bg-button-hover: var(--clr-neutral-700);
+	}
+}
